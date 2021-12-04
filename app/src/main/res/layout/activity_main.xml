@@ -18,6 +18,7 @@
 
 
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
             android:layout_width="80dp"
             android:layout_height="80dp"
             app:civ_border_width="2dp"
@@ -27,11 +28,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="아이유"/>
-
-
-
-
-
 
 
     </LinearLayout>
