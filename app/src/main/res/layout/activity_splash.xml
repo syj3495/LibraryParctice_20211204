@@ -8,8 +8,12 @@
     android:orientation="vertical"
     android:layout_gravity="center">
 
-    <ImageView
+    <com.airbnb.lottie.LottieAnimationView
         android:layout_width="100dp"
-        android:layout_height="100dp"/>
+        android:layout_height="100dp"
+        app:lottie_rawRes="@raw/loading"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
 
 </LinearLayout>
