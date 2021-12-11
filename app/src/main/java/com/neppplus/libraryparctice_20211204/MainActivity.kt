@@ -6,6 +6,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.bumptech.glide.Glide
 import com.gun0912.tedpermission.PermissionListener
 import com.gun0912.tedpermission.normal.TedPermission
 import kotlinx.android.synthetic.main.activity_main.*
@@ -68,7 +69,15 @@ class MainActivity : AppCompatActivity() {
 
     fun setValues(){
 
+//        인터넷상에 있는 이미지를 -> 곧바로 이미지뷰에 적용.
 
+//        이미지 주소를 변수에 저장
+        val imageURL = "https://spnimage.edaily.co.kr/images/Photo/files/NP/S/2021/09/PS21090100069.jpg"
+
+
+//        Glide 이용 => imageURL 주소의 그림을 => imgInternet에 반영.
+
+        Glide.with(this).load(imageURL).into( imgInternet )
 
     }
 }
